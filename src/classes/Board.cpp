@@ -74,3 +74,4 @@ int Board::getYSize(){
     return m_sizeY;
 }
 
+//afficher point

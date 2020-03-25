@@ -7,7 +7,7 @@ Classe de gestion du serpent (déplacement, manger fruits)
 #include <iostream>
 #include "Point.h"
 #include "Board.h"
-
+using namespace std;
 
 
 
@@ -37,11 +37,11 @@ public:
     * \return true en cas de collision
     */
     bool checkColisionWithBoard();
-
+    bool checkColisionWithSnake();
 
 private:
     /** tableau de point, corps du serpent*/
     Point serpent[50];
     /** longueur du serpent */
-    int longeur = 3;
+    int longueur = 12;
 };
