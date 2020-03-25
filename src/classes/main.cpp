@@ -26,7 +26,7 @@ int kbhit(void);
 
 int main()
 {
-    int directionEnCours=TOUCHE_KEY_LEFT;
+    int directionEnCours=TOUCHE_KEY_DOWN;
 
     // pointeurs sur l'unique instance de la classe fenetre
     Board *fenetre;
@@ -43,7 +43,7 @@ int main()
     {
         if(kbhit())
         {
-            switch (getch())//deplacement du serpent
+            switch (getch())
             {
             case 259:
                 directionEnCours = TOUCHE_KEY_UP;
@@ -62,7 +62,7 @@ int main()
 
         }
         serpent.move(directionEnCours);
-        collision = serpent.checkColisionWithBoard() || serpent.checkColisionWithSnake();//  
+        collision = serpent.checkColisionWithBoard();
         serpent.affichSerpent();
         usleep (150000);
 

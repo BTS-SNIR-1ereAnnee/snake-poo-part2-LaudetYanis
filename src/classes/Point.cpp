@@ -88,10 +88,3 @@ Point::~Point()
     //dtor
 }
 
-bool operator==(Point a, Point b) 
-{
-    if (a.getY() == b.getY() && a.getX() == b.getX())
-        return TRUE;
-    else 
-        return FALSE;
-}
