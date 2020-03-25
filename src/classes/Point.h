@@ -72,4 +72,5 @@ private:
     int m_y; //!< Member variable "m_y"
 };
 
+bool operator==(Point a, Point b);
 #endif // POINT_H
